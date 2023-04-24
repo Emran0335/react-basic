@@ -1,0 +1,98 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > input {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.form > input:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 4px;
+}
+
+.form > button {
+  background-color: #91ecae;
+  border: none;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+
+.form > button:hover {
+  background-color: #42e676;
+  color: white;
+}
+
+.form > input,
+button {
+  display: block;
+}
+.controll_form {
+  text-align: center;
+  width: 80%;
+  margin: 100px auto;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.field {
+  padding: 10px 0px;
+}
+.field > button {
+  width: 100%;
+  margin: auto;
+}
+
+.feedback {
+  width: 400px;
+  height: 300px;
+  margin: 40px auto;
+}
+.feedback_field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.feedback_field > input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.feedback_button {
+  margin-top: 10px;
+  padding: 5px 0px;
+}
+.feedback_field > textarea {
+  width: 100%;
+  padding: 30px 0px;
+}
+.context_header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.context_container {
+  margin: 10px;
+}
+.context_user {
+  margin-left: 150px;
+}
