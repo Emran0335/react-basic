@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-
 const reducer = (state, action) => {
   if (action.type === "sell_a_meal") return { money: state.money + 10 };
   if (action.type === "buy_ingredients") return { money: state.money - 10 };
@@ -12,7 +11,6 @@ const UseReducerHook = () => {
   // const reducerFunc = React.useReducer(reducer, initialState);
   // console.log(reducerFunc)
   // console.log(typeof dispatch) // function
-
   return (
     <div>
       <div>
@@ -32,9 +30,7 @@ const UseReducerHook = () => {
     </div>
   );
 };
-
 export default UseReducerHook;
-
 /*
 The action type determines the specific action of the reducer. Actions can have any form. By convention, it's common to pass objects with a type property identifying the action. It should include the minimal necessary information that the reducer needs to compute the next state.
 

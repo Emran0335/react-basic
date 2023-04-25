@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 const HookRules = () => {
   const [petName, setPetName] = useState("Fluffy");
-
   function nameLooper() {
     if (petName === "Fluffy") {
       setPetName("Rexy");
@@ -31,9 +29,7 @@ const HookRules = () => {
     </div>
   );
 };
-
 export default HookRules;
-
 /*
 // Invalid as useState hook is called inside JavaScript function and condition.
 function nameLooper() {
@@ -65,7 +61,6 @@ function nameLooper() {
     }
 }
 Rather than using the state setting function setPetName inside the name looper function, the use of useState hook has been used here instead. If you compile the code and run the app, you will find not the expected output returned and you will receive an invalid hook call error.
-
 4. The fourth rule is that it might disrupt the sequence of invocation from one render to the next. Such a violation would result an errors. If you want to call an effect conditionally, you can still do so. But make sure to place the condition inside the hook. Here
 // the valid use of hook
 useEffect(()=> {
@@ -74,7 +69,6 @@ useEffect(()=> {
     }
 })
 So, now you are not breaking the rules and the code is valid.
-
 The recap of four rules are -
 1. Only call hooks from a React Component function
 2. Only call hooks at the top level

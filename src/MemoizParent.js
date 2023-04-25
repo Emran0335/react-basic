@@ -17,6 +17,5 @@ const MemoizParent = () => {
     </div>
   );
 };
-
 export default MemoizParent;
 
