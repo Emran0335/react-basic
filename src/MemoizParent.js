@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import MemoizChild from "./MemozChild";
-
+console.log(MemoizChild);
 
 const MemoizParent = () => {
   const [count, setCount] = useState(0);
-  console.log("I am parent.");
+
   return (
     <div className="container">
       <div className="memoize">
@@ -19,3 +19,4 @@ const MemoizParent = () => {
 };
 
 export default MemoizParent;
+

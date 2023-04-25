@@ -13,14 +13,17 @@ import ReactDOM from "react-dom/client";
 // import Fetch from "./Fetch";
 // import UseReducerHook from "./UseReducerHook";
 // import Composition from "./Composition";
+// import MemoizParent from "./MemoizParent";
+// import HOC from "./HOC";
 import { UseProvider } from "./context/UserContext";
 import "./index.css";
-import MemoizParent from "./MemoizParent";
+import RenderProps from "./RenderProps";
 // import ReactAPI from "./ReactAPI";
 // import Ref from "./Ref";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+
   <UseProvider>
     <React.StrictMode>
       {/* <UseRef /> */}
@@ -38,8 +41,11 @@ root.render(
       {/* <Ref/> */}
       {/* <Composition/> */}
       {/* <ReactAPI/> */}
-      <MemoizParent/>
+      {/* <MemoizParent/> */}
+      {/* <HOC/> */}
+      <RenderProps/>
     </React.StrictMode>
   </UseProvider>
 );
+
 
