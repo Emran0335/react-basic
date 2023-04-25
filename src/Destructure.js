@@ -1,14 +1,11 @@
 import { useState } from "react";
-
 const Destructure = () => {
   // const restaurantName = useState("Lemon");
   // console.log(restaurantName);
   const [restaurantName, setRestaurantName] = useState("Lemon");
-
   function updateRestaurantName() {
     setRestaurantName("Little Lemon");
   }
-
   return (
     <div>
       <h1>{restaurantName}</h1>
@@ -16,12 +13,9 @@ const Destructure = () => {
     </div>
   );
 };
-
 export default Destructure;
-
 /*
 // useState hook 
-
 We will learn the return value of useState hook. Array destructuring is a way to get individual items from an array of items and save those individual items as separate components.
 let veggies = [parsley, onion, carrot];
 we want to get each items in separate variable. 
